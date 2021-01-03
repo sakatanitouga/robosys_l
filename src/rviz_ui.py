@@ -11,16 +11,17 @@ pub = rospy.Publisher("arrow_pub", Marker, queue_size = 10)
 rate = rospy.Rate(25)
 
 r=0
-d=0
-
+dx=0
+dy=0
 def callback(vel):
-    global d
+    global dx,dy
     global r
-    rospy.loginfo("Liner:%f",vel.linear.x)
-    rospy.loginfo("Angular:%f",vel.angular.z)
+    rospy.loginfo("dx:%f",dx)
+    rospy.loginfo("dy:%f",dy)
     
-    d+=vel.linear.x
-    r+=vel.angular.z
+    dx+=vel.linear.x*math.cos(math.radians(r*90))
+    dy+=vel.linear.x*math.sin(math.radians(r*90))
+    r+=vel.angular.z*10/90
     marker_data = Marker()
     marker_data.header.frame_id = "map"
     marker_data.header.stamp = rospy.Time.now()
@@ -30,14 +31,14 @@ def callback(vel):
 
     marker_data.action = Marker.ADD
 
-    marker_data.pose.position.x = 0.0-d*10*math.cos(-r)
-    marker_data.pose.position.y = 0.0-d*10*math.sin(-r)
+    marker_data.pose.position.x = 0.0-dx*10
+    marker_data.pose.position.y = 0.0-dy*10
     marker_data.pose.position.z = 0.0
 
     marker_data.pose.orientation.x=0.0
-    marker_data.pose.orientation.y=0.0
-    marker_data.pose.orientation.z=1.0
-    marker_data.pose.orientation.w=0.0+r
+    marker_data.pose.orientation.y=0
+    marker_data.pose.orientation.z=r
+    marker_data.pose.orientation.w=1
 
 
     marker_data.color.r = 1.0
