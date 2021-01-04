@@ -1,6 +1,37 @@
-#Ps4コントローラでrvizを操作  
-#セットアップ方法  
-DS4を入れる
+# 雨粒を集めましょう  
+## 環境
+OS: Ubuntu18.04  
+Ros  
+Python2.7  
+## セットアップ方法  
 ```
-sudo pip install ds4drv
+git clone https://github.com/sakatanitouga/robosys_l.git  
+```  
+
+cloneしたフォルダの中の robosys_l/src のディレクトリに行き  
+
 ```
+chmod +x key_input.py
+chmod +x tkinter_ui.py
+```
+と入力し、実行許可を行う  
+
+## 遊び方  
+ターミナル上で
+```
+roscore
+```
+
+別のターミナルでcloneしたフォルダの中の robosys_l/src のディレクトリに行き以下を入力  
+```
+rosrun robosys_l tkinter_ui.py
+```  
+!!注意!!  
+tkinter_ui.pyの実行はrobosys_l/src のディレクトリで実行を行わないと音声ファイルが再生されないので　　
+robosys_l/srcのディレクトリで実行するようにしてください。
+
+別のターミナルで以下を入力
+```
+rosrun robosys_l key_input.py
+```
+
