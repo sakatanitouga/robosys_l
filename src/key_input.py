@@ -30,7 +30,7 @@ def teleop():
                 # linear.xは前後方向の並進速度(m/s)。前方向が正。
                 # angular.zは回転速度(rad/s)。反時計回りが正。
             else:
-                print("Input f, b, l, r")
+                print("Input a,d")
                 
         else:
             pub.publish(0)
