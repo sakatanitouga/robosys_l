@@ -5,7 +5,7 @@
 
 ## 動作環境
 OS: Ubuntu18.04  
-Ros  
+ROS  
 Python 2.7  
 pygame 1.9.6
 ## 使用したもの  
@@ -15,7 +15,7 @@ Ubuntu18.04 OSのPC
 https://www.youtube.com/watch?v=57TtqhpEYpI  
 
 ## インストール方法  
-Rosのインストール方法は以下のリンクを参考に入れてください。  
+ROSのインストール方法は以下のリンクを参考に入れてください。  
 http://wiki.ros.org/ja/kinetic/Installation/Ubuntu  
 
 インストールが完了したら/catkin_ws/srcのディレクトリに移動し以下を入力してください。  
