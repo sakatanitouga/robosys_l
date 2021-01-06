@@ -6,7 +6,7 @@
 ## 動作環境
 OS: Ubuntu18.04  
 Ros  
-Python 2.7
+Python 2.7  
 pygame 1.9.6
 ## 使用したもの  
 Ubuntu18.04 OSのPC  
