@@ -1,12 +1,19 @@
 # 雨粒を集めましょう  
 ![Screenshot from 2021-01-05 01-48-02](https://user-images.githubusercontent.com/52824423/103558904-b0343700-4ef8-11eb-9f32-1a9fbc725d76.png)  
-## リポジトリの概要
+## リポジトリの概要  
+落ちてくる雨粒を集めるゲームです。  
 
 ## 動作環境
 OS: Ubuntu18.04  
 Ros  
 Python 2.7
 pygame 1.9.6
+## 使用したもの  
+Ubuntu18.04 のOSのPC  
+
+## デモ動画  
+https://www.youtube.com/watch?v=57TtqhpEYpI  
+
 ## インストール方法  
 Rosのインストール方法は以下のリンクを参考に入れてください。  
 http://wiki.ros.org/ja/kinetic/Installation/Ubuntu  
@@ -42,3 +49,5 @@ robosys_l/srcのディレクトリで実行するようにしてください。
 rosrun robosys_l key_input.py
 ```
 
+## ライセンス  
+こちらのリポジトリのライセンスはBSD-2-Clause Licenseです。詳しくは[こちら](https://github.com/sakatanitouga/robosys_l/blob/master/LICENSE)。
