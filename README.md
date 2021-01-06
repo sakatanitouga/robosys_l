@@ -1,22 +1,27 @@
 # 雨粒を集めましょう  
 ![Screenshot from 2021-01-05 01-48-02](https://user-images.githubusercontent.com/52824423/103558904-b0343700-4ef8-11eb-9f32-1a9fbc725d76.png)  
+## リポジトリの概要
 
-## 環境
+## 動作環境
 OS: Ubuntu18.04  
 Ros  
-Python2.7  
-## セットアップ方法  
+Python 2.7
+pygame 1.9.6
+## インストール方法  
+Rosのインストール方法は以下のリンクを参考に入れてください。  
+http://wiki.ros.org/ja/kinetic/Installation/Ubuntu  
+
+インストールが完了したら/catkin_ws/srcのディレクトリに移動し以下を入力してください。  
 ```
 git clone https://github.com/sakatanitouga/robosys_l.git  
 ```  
 
-cloneしたフォルダの中の robosys_l/src のディレクトリに行き  
+cloneしたフォルダの中へ移動し  
 
 ```
-chmod +x key_input.py
-chmod +x tkinter_ui.py
+./ setup.sh
 ```
-と入力し、実行許可を行う  
+と入力するとインストールが始まります。  
 
 ## 遊び方  
 ターミナル上で

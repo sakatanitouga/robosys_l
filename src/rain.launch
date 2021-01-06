@@ -1,4 +1,0 @@
-<launch>
-    <node pkg="robosys_l" name="tkinter_ui" type="tkinter_ui.py" output="screen" />
-    <node pkg="robosys_l" name="key_input" type="key_input.py" output="screen" />
-</launch>
