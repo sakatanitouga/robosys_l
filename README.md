@@ -9,7 +9,7 @@ Ros
 Python 2.7
 pygame 1.9.6
 ## 使用したもの  
-Ubuntu18.04 のOSのPC  
+Ubuntu18.04 OSのPC  
 
 ## デモ動画  
 https://www.youtube.com/watch?v=57TtqhpEYpI  
