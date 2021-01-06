@@ -26,7 +26,7 @@ git clone https://github.com/sakatanitouga/robosys_l.git
 cloneしたフォルダの中へ移動し  
 
 ```
-./ setup.sh
+./setup.sh
 ```
 と入力するとインストールが始まります。  
 
